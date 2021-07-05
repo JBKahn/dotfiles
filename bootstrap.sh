@@ -3,6 +3,7 @@ git config --global gc.writeCommitGraph true
 git config --global protocol.version 2
 git config --global rebase.autoStash true
 git config --global pull.rebase true
+git config --global push.default current
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
