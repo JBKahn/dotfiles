@@ -14,9 +14,4 @@ git config --global alias.pullc '!f() { git pull origin `git rev-parse --abbrev-
 git config --global alias.fetchm "fetch origin master:master"
 git config --global alias.pullm "pull origin master"
 git config --global core.editor nvim
-alias g='git'
-export HISTFILE=~/.zsh_history
-export HISTSIZE=10000
-export SAVEHIST=1000
-setopt SHARE_HISTORY
-sudo sh -c 'echo "run: source ~/dotfiles/bootstrap.sh" >> /etc/motd'
+source ./bashing.sh
