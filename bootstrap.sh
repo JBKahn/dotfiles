@@ -14,4 +14,9 @@ git config --global alias.pullc '!f() { git pull origin `git rev-parse --abbrev-
 git config --global alias.fetchm "fetch origin master:master"
 git config --global alias.pullm "pull origin master"
 git config --global core.editor nvim
-source ./bashing.sh
+
+echo "alias g='git'" >> ~/.zshrc
+echo 'export HISTFILE=~/.zsh_history' >> ~/.zshrc
+echo 'export HISTSIZE=10000' >> ~/.zshrc
+echo 'export SAVEHIST=1000' >> ~/.zshrc
+echo 'setopt SHARE_HISTORY' >> ~/.zshrc
