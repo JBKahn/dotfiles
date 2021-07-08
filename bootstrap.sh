@@ -17,7 +17,7 @@ git config --global alias.ci commit
 git config --global alias.unstage "reset HEAD --"
 git config --global alias.st status
 # This pushes the current branch (push.default current will have git push do this by default)
-git config --global alias.pushc "push origin `git rev-parse --abbrev-ref HEAD`"
+git config --global alias.pushc '!f() { git push origin `git rev-parse --abbrev-ref HEAD`; }; f'
 # This pushes the pull the current branch you have checked out using a rebase
 git config --global alias.pullc '!f() { git pull origin `git rev-parse --abbrev-ref HEAD`; }; f'
 # When not on the master branch, this wlll fetch the latest copy of master and update your local one
